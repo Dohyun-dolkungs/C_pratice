@@ -2,21 +2,10 @@
 
 int main() {
     
-    float fahr, celsius;
-    int lower, upper, step;
+int fahr;
 
-    lower = 0;  /* lower limit of temperatrue table */
-    upper = 300;    /* upper limit */
-    step = 20;  /* step size */
-
-    fahr = lower;
-
-    // heading
-    printf("F-celsius to C-celsius\n");
-    while(fahr <= upper) {
-        celsius = (5.0/9.0) * (fahr-32.0);
-        printf("%3.0f %6.1f\n", fahr, celsius);
-        fahr += step;
-    }   
+for(fahr = 0; fahr <= 300; fahr += 20){
+    printf("%3d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
+}
     
 }
